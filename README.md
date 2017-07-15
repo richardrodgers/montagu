@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/richardrodgers/montagu.svg?branch=master)](https://travis-ci.org/richardrodgers/montagu)
 
 Montagu is a minimal [LDP](https://www.w3.org/TR/ldp/) implementation in the spirit of [Cavendish](https://github.com/cavendish-ldp/cavendish), created to facilitate exploration of
-the design space around [Fedora 4](http://duraspace.org/about_fedora) repository use-cases.
+the design space around [Fedora 4](http://fedorarepository.org) repository use-cases.
 
 Montagu hopes eventually to offer a variety of RDF and binary (Non-RDF) backends,
 but the current WIP supports only:
@@ -31,7 +31,7 @@ Montagu will prefer S3 if configured, but fall back to a local pairtree.
 
 ## Dependencies
 
-Monatgu uses standard Scala tooling: [SDKMAN!](https://sdkman.io) is your friend.
+Monatgu uses standard Scala tooling: [SDKMAN!](http://sdkman.io) is your friend.
 
 ## Lady Mary Wortley Montagu
 
