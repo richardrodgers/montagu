@@ -23,7 +23,7 @@ import LdpVocabulary._
 class LdpServerTest extends FlatSpec {
 
   val turtleMt = new MediaType("text", "turtle")
-  val baseUri = uri("http://foo.bar/foo")
+  val baseUri = uri("http://localhost:8080/ldp")
   val service = LdpServer.ldpService
 
   "An LDP server" should "advertise LDP support" in {
@@ -52,7 +52,7 @@ class LdpServerTest extends FlatSpec {
   }
 
   "A PATCH without Content-Type 'application/sparql-update'" should "fail" in {
-    val req = Request(PATCH, uri("http://foo.bar/foo"))
+    val req = Request(PATCH, uri("http://localhost:8080/ldp"))
               .putHeaders(`Content-Type`(new MediaType("application","json")))
     val res = service.run(req).run
     assert(res.status == BadRequest)
