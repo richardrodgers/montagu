@@ -33,6 +33,14 @@ Montagu will prefer S3 if configured, but fall back to a local pairtree.
 
 Monatgu uses standard Scala tooling: [SDKMAN!](http://sdkman.io) is your friend.
 
+## Running
+
+In project directory:
+
+    sbt run
+
+will compile the code and start a server at localhost:8080 with an LDP service at: /ldp
+
 ## Lady Mary Wortley Montagu
 
     I sometimes give myself admirable advice, but I am incapable of taking it.
